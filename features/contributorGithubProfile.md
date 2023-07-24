@@ -3,6 +3,8 @@ Contributors should be able to add a graphical representation of their of their 
 
 ## Relevant Tech Infrastructure
 ### Database
+- CDN
 ### Server
+- Graphic Generator
 ### Bot + Frontend
 
