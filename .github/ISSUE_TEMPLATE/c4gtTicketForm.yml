@@ -19,5 +19,55 @@ body:
         - [ ] [Goal2]
         - [ ] [Goal3]
         ...
-      render: markdown
-  
+  - type: textarea
+    id: ticket-outcomes
+    attributes:
+      label: Expected Outcomes
+      description: Describe in detail what the final product or result should look like and how it should behave
+      placeholder: Please describe expected outcomes of your ticket
+  - type: textarea
+    id: ticket-acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: List the acceptance criteria for your ticket
+      value: |
+        - [ ] [Criteria1]
+        - [ ] [Criteria2]
+        - [ ] [Criteria3]
+        ...
+  - type: textarea
+    id: ticket-implementation-details
+    attributes:
+      label: Implementation Details
+      description: List any technical details about the proposed implementation, including any specific technologies that will be used
+      placeholder: Please describe details relevant to the technical implementation of your ticket
+  - type: textarea
+    id: ticket-wireframes
+    attributes:
+      label: Mockups or Wireframes
+      description: Include links to any visual aids, mockups, wireframes, or diagrams that help illustrate what the final product should look like. This is not always necessary, but can be very helpful in many cases
+      placeholder: Please include links to any relevant wireframes or mockups
+  - type: input
+    id: ticket-product
+    attributes:
+      label: Product Name
+      placeholder: Enter product name
+  - type: checkboxes
+    id: ticket-category
+    attributes: 
+      label: Category
+      description: Choose the categories that best describe your ticket
+      options:
+        - label: CI/CD
+        - label: Integrations
+        - label: Performance Improvement
+        - label: Security
+        - label: UI/UX/Design
+        - label: Bug
+        - label: Feature
+        - label: Documentation
+        - label: Deployment
+        - label: Test
+        - label: PoC
+        - label: Other
+      
