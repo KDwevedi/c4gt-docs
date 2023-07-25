@@ -3,16 +3,9 @@ description: Create a new Ticket for C4GT Community
 title: "[C4GT Community]: "
 labels: ["C4GT Community"]
 body:
-  - type: markdown
-    attributes:
-      value: "## Description"
-  - type: markdown
-    attributes:
-      value: |
-        Provide a brief description of the feature, including why it is needed and what it will accomplish. You can skip any of Goals, Expected Outcome, Implementation Details, Mockups / Wireframes if they are irrelevant. Please note that this section of the ticket is suggestive & you can structure it as per your prerogative.
-  - type: textarea
+    - type: textarea
     id: ticket-description
     attributes:
-      description: This is a description
-      label: a description of the ticket contents
-      placeholder: Please describe your issue
+      description: Provide a brief description of the feature, including why it is needed and what it will accomplish.
+      label: Description
+      placeholder: Please enter a complete description of the ticket
