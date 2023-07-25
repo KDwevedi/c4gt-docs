@@ -7,7 +7,6 @@ body:
     id: ticket-description
     attributes:
       description: Provide a brief description of the feature, including why it is needed and what it will accomplish.
-        Tip: Hello
       label: Description
       placeholder: Please enter a complete description of the ticket
   - type: textarea
