@@ -9,3 +9,14 @@ body:
       description: Provide a brief description of the feature, including why it is needed and what it will accomplish.
       label: Description
       placeholder: Please enter a complete description of the ticket
+  - type: textarea
+    id: ticket-goals
+    attributes:
+      description: (optional) list the goals of your ticket
+      value: |
+        - [ ] [Goal1]
+        - [ ] [Goal2]
+        - [ ] [Goal3]
+        ...
+      render: markdown
+  
