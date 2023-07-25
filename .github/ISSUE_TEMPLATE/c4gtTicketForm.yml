@@ -64,16 +64,16 @@ body:
       description: Choose the categories that best describe your ticket
       multiple: true
       options:
-        - label: CI/CD
-        - label: Integrations
-        - label: Performance Improvement
-        - label: Security
-        - label: UI/UX/Design
-        - label: Bug
-        - label: Feature
-        - label: Documentation
-        - label: Deployment
-        - label: Test
-        - label: PoC
-        - label: Other
+        - CI/CD
+        - Integrations
+        - Performance Improvement
+        - Security
+        - UI/UX/Design
+        - Bug
+        - Feature
+        - Documentation
+        - Deployment
+        - Test
+        - PoC
+        - Other
       
