@@ -52,6 +52,11 @@ body:
     attributes:
       label: Product Name
       placeholder: Enter product name
+  - type: input
+    id: ticket-project
+    attributes:
+      label: Project Name
+      placeholder: Enter project name
   - type: checkboxes
     id: ticket-category
     attributes: 
