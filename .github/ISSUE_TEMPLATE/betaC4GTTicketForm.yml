@@ -33,11 +33,7 @@ body:
         [List any technical details about the proposed implementation, including any specific technologies that will be used.]
         
         ## Mockups / Wireframes
-        [Include links to any visual aids, mockups, wireframes, or diagrams that help illustrate what the final product should look like. This is not always necessary, but can be very helpful in many cases.]   - type: input
-    id: ticket-product
-    attributes:
-      label: Product Name
-      placeholder: Enter product name
+        [Include links to any visual aids, mockups, wireframes, or diagrams that help illustrate what the final product should look like. This is not always necessary, but can be very helpful in many cases.]   - type: input 
   - type: input
     id: ticket-project
     attributes:
