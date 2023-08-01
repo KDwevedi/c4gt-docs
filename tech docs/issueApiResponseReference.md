@@ -63,7 +63,7 @@
 ]
 ```
 
-### Issue closed by PR merger 1
+### Issue closed by PR merger: Case 1
 Issue closed automatically on PR merger. PR was linked using [keywords](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#linking-a-pull-request-to-an-issue-using-a-keyword).    
 **Reference Issue:** [Issue #8](https://github.com/KDwevedi/c4gt-docs/issues/8)    
 **API Response:** [Issue #8 API Response](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/8)    
@@ -307,12 +307,12 @@ Contains information about the PR that was linked to the issue.
       }
     },
 ```
-### Issue CLosed by PR Merger 2   
+### Issue CLosed by PR Merger: Case 2   
 Closed by linking through the [development tab in the Pull Request sidebar](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#manually-linking-a-pull-request-to-an-issue-using-the-pull-request-sidebar)    
 **Reference:** [Issue #9](https://github.com/KDwevedi/c4gt-docs/issues/9)  
 **API Reference:** [Issue #9 API Response](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/9)  
 
-API Response is similar to 
+API Response is similar to [case 1](https://github.com/KDwevedi/c4gt-docs/edit/main/tech%20docs/issueApiResponseReference.md#issue-closed-by-pr-merger:-case-1)
 
 
   
