@@ -3,3 +3,4 @@ Docs for C4GT. Will make these permanent using Samagra Docs template as soon as 
 
 ## Tests for PR merger API response
 - [ ] PR Linked and closed closes the issue (Keyword)
+- [ ] PR Linked and closed closes the issue (Development Tab)
