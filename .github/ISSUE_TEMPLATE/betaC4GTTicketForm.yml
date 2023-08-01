@@ -35,10 +35,44 @@ body:
         ## Mockups / Wireframes
         [Include links to any visual aids, mockups, wireframes, or diagrams that help illustrate what the final product should look like. This is not always necessary, but can be very helpful in many cases.]   - type: input 
   - type: input
-    id: ticket-project
+    id: ticket-product
     attributes:
-      label: Project Name
-      placeholder: Enter project name
+      label: Product Name
+      placeholder: Enter Product Name
+  - type: input
+    id: ticket-organisation
+    attributes:
+      label: Organisation Name
+      placeholder: Enter Organisation Name
+  - type: input
+    id: ticket-governance-domain
+    attributes:
+      label: Domain
+      placeholder: Enter Area of Governance
+  - type: textarea
+    id: ticket-technical-skills-required
+    attributes:
+      label: Tech Skills Needed
+      description: A comma separated list of technical skills that would be required to solve the ticket
+    validations:
+      required: true
+  - type: textarea
+    id: ticket-mentors
+    attributes:
+      label: Mentor(s)
+      description: Please tag relevant mentors for the ticket
+    validations:
+      required: true
+  - type: dropdown
+    id: ticket-complexity
+    attributes: 
+      label: Complexity
+      description: Choose a complexity describing the complexity of your ticket
+      multiple: false
+      options:
+        - Low
+        - Medium
+        - High
   - type: dropdown
     id: ticket-category
     attributes: 
@@ -58,4 +92,35 @@ body:
         - Test
         - PoC
         - Other
+  - type: dropdown
+    id: ticket-sub-category
+    attributes: 
+      label: Sub Category
+      description: Choose the sub categories that best describe your ticket
+      multiple: true
+      options:
+        - API
+        - Database
+        - Analytics
+        - Refactoring
+        - Data Science
+        - Machine Learning
+        - Accessibility
+        - Internationalization
+        - Localization
+        - Frontend
+        - Backend
+        - Mobile
+        - SEO
+        - Configuration
+        - Deprecation
+        - Breaking Change
+        - Maintenance
+        - Support
+        - Question
+        - Technical Debt
+        - Beginner Friendly
+        - Research
+        - Reproducible
+        - Needs Reproduction
       
