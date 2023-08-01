@@ -6,3 +6,4 @@ Docs for C4GT. Will make these permanent using Samagra Docs template as soon as 
 - [ ] PR Linked and closed closes the issue (Development Tab)
 - [ ] PR Linked and closed closes the issue (keyword after the pr has been created)
 - [ ] PR Referenced and closed. Closed Issue by hand.
+- [ ] PR Linked but merged to a branch that isn't the default branch
