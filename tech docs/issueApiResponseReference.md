@@ -307,12 +307,169 @@ Contains information about the PR that was linked to the issue.
       }
     },
 ```
-### Issue CLosed by PR Merger: Case 2   
+### Issue Closed by PR Merger: Case 2   
 Closed by linking through the [development tab in the Pull Request sidebar](https://docs.github.com/en/issues/tracking-your-work-with-issues/linking-a-pull-request-to-an-issue#manually-linking-a-pull-request-to-an-issue-using-the-pull-request-sidebar)    
 **Reference:** [Issue #9](https://github.com/KDwevedi/c4gt-docs/issues/9)  
 **API Reference:** [Issue #9 API Response](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/9)  
 
-API Response is similar to [case 1](https://github.com/KDwevedi/c4gt-docs/edit/main/tech%20docs/issueApiResponseReference.md#issue-closed-by-pr-merger:-case-1)
+API Response is similar to [case 1](https://github.com/KDwevedi/c4gt-docs/blob/main/tech%20docs/issueApiResponseReference.md#issue-closed-by-pr-merger-case-1)  
+However, [timeline](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/9/timeline) content is different.  
+Instead of 'cross-referenced' event the timeline shows a 'connected' event.  
+**Connected Event:**  
+```json
+{
+    "id": 9971910299,
+    "node_id": "COE_lADOJ-2uL85tGuVfzwAAAAJSX0ab",
+    "url": "https://api.github.com/repos/KDwevedi/c4gt-docs/issues/events/9971910299",
+    "actor": {
+      "login": "KDwevedi",
+      "id": 74085496,
+      "node_id": "MDQ6VXNlcjc0MDg1NDk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74085496?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/KDwevedi",
+      "html_url": "https://github.com/KDwevedi",
+      "followers_url": "https://api.github.com/users/KDwevedi/followers",
+      "following_url": "https://api.github.com/users/KDwevedi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/KDwevedi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/KDwevedi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/KDwevedi/subscriptions",
+      "organizations_url": "https://api.github.com/users/KDwevedi/orgs",
+      "repos_url": "https://api.github.com/users/KDwevedi/repos",
+      "events_url": "https://api.github.com/users/KDwevedi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/KDwevedi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "event": "connected",
+    "commit_id": null,
+    "commit_url": null,
+    "created_at": "2023-08-01T05:21:15Z",
+    "performed_via_github_app": null
+  }
+```
+While 'actor' is still available, we must GET the [event url](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/events/9971910299) for the 'connected' event to obtain the linked PR.  
+**Full Connected Event:**  
+```json
+{
+  "id": 9971910299,
+  "node_id": "COE_lADOJ-2uL85tGuVfzwAAAAJSX0ab",
+  "url": "https://api.github.com/repos/KDwevedi/c4gt-docs/issues/events/9971910299",
+  "actor": {
+    "login": "KDwevedi",
+    "id": 74085496,
+    "node_id": "MDQ6VXNlcjc0MDg1NDk2",
+    "avatar_url": "https://avatars.githubusercontent.com/u/74085496?v=4",
+    "gravatar_id": "",
+    "url": "https://api.github.com/users/KDwevedi",
+    "html_url": "https://github.com/KDwevedi",
+    "followers_url": "https://api.github.com/users/KDwevedi/followers",
+    "following_url": "https://api.github.com/users/KDwevedi/following{/other_user}",
+    "gists_url": "https://api.github.com/users/KDwevedi/gists{/gist_id}",
+    "starred_url": "https://api.github.com/users/KDwevedi/starred{/owner}{/repo}",
+    "subscriptions_url": "https://api.github.com/users/KDwevedi/subscriptions",
+    "organizations_url": "https://api.github.com/users/KDwevedi/orgs",
+    "repos_url": "https://api.github.com/users/KDwevedi/repos",
+    "events_url": "https://api.github.com/users/KDwevedi/events{/privacy}",
+    "received_events_url": "https://api.github.com/users/KDwevedi/received_events",
+    "type": "User",
+    "site_admin": false
+  },
+  "event": "connected",
+  "commit_id": null,
+  "commit_url": null,
+  "created_at": "2023-08-01T05:21:15Z",
+  "issue": {
+    "url": "https://api.github.com/repos/KDwevedi/c4gt-docs/issues/9",
+    "repository_url": "https://api.github.com/repos/KDwevedi/c4gt-docs",
+    "labels_url": "https://api.github.com/repos/KDwevedi/c4gt-docs/issues/9/labels{/name}",
+    "comments_url": "https://api.github.com/repos/KDwevedi/c4gt-docs/issues/9/comments",
+    "events_url": "https://api.github.com/repos/KDwevedi/c4gt-docs/issues/9/events",
+    "html_url": "https://github.com/KDwevedi/c4gt-docs/issues/9",
+    "id": 1830479199,
+    "node_id": "I_kwDOJ-2uL85tGuVf",
+    "number": 9,
+    "title": "Test: Create an issue and close by pull request 2",
+    "user": {
+      "login": "KDwevedi",
+      "id": 74085496,
+      "node_id": "MDQ6VXNlcjc0MDg1NDk2",
+      "avatar_url": "https://avatars.githubusercontent.com/u/74085496?v=4",
+      "gravatar_id": "",
+      "url": "https://api.github.com/users/KDwevedi",
+      "html_url": "https://github.com/KDwevedi",
+      "followers_url": "https://api.github.com/users/KDwevedi/followers",
+      "following_url": "https://api.github.com/users/KDwevedi/following{/other_user}",
+      "gists_url": "https://api.github.com/users/KDwevedi/gists{/gist_id}",
+      "starred_url": "https://api.github.com/users/KDwevedi/starred{/owner}{/repo}",
+      "subscriptions_url": "https://api.github.com/users/KDwevedi/subscriptions",
+      "organizations_url": "https://api.github.com/users/KDwevedi/orgs",
+      "repos_url": "https://api.github.com/users/KDwevedi/repos",
+      "events_url": "https://api.github.com/users/KDwevedi/events{/privacy}",
+      "received_events_url": "https://api.github.com/users/KDwevedi/received_events",
+      "type": "User",
+      "site_admin": false
+    },
+    "labels": [
+
+    ],
+    "state": "closed",
+    "locked": false,
+    "assignee": null,
+    "assignees": [
+
+    ],
+    "milestone": null,
+    "comments": 0,
+    "created_at": "2023-08-01T05:13:16Z",
+    "updated_at": "2023-08-01T05:21:37Z",
+    "closed_at": "2023-08-01T05:21:37Z",
+    "author_association": "OWNER",
+    "active_lock_reason": null,
+    "body": "Connect by Development tab",
+    "reactions": {
+      "url": "https://api.github.com/repos/KDwevedi/c4gt-docs/issues/9/reactions",
+      "total_count": 0,
+      "+1": 0,
+      "-1": 0,
+      "laugh": 0,
+      "hooray": 0,
+      "confused": 0,
+      "heart": 0,
+      "rocket": 0,
+      "eyes": 0
+    },
+    "timeline_url": "https://api.github.com/repos/KDwevedi/c4gt-docs/issues/9/timeline",
+    "performed_via_github_app": null,
+    "state_reason": "completed"
+  },
+  "performed_via_github_app": null
+}
+```
+### Issue Closed by PR Merger: Case 3  
+Issue is linked using keywords after the PR is already created by editing the PR content  
+**Reference Issue:** [Issue #11](https://github.com/KDwevedi/c4gt-docs/issues/14)  
+**Reference Issue API Response:** [Issue #11 API Response](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/14)  
+Seems Identical to [case 1](https://github.com/KDwevedi/c4gt-docs/blob/main/tech%20docs/issueApiResponseReference.md#issue-closed-by-pr-merger-case-1)
+
+### Issue Linked in a PR being merged to a branch which is *not* the [Default Branch](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/proposing-changes-to-your-work-with-pull-requests/about-branches#about-the-default-branch)
+
+**Reference Issue:** [Issue #11](https://github.com/KDwevedi/c4gt-docs/issues/11)  
+**Reference Issue API Response:** [Issue #11 API Response](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/11)
+
+[Timeline](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/11/timeline) has both 'cross-referenced' and 'connected' events. Refer [Case 1](https://github.com/KDwevedi/c4gt-docs/blob/main/tech%20docs/issueApiResponseReference.md#issue-closed-by-pr-merger-case-1) and [Case 2](https://github.com/KDwevedi/c4gt-docs/blob/main/tech%20docs/issueApiResponseReference.md#issue-closed-by-pr-merger-case-2) for response examples.
+
+### Reference the Issue and Close it by hand
+We can simply [mention issues](https://docs.github.com/en/issues/tracking-your-work-with-issues/about-issues#efficient-communication) in PR bodies to refer to issues we're contributing toward.
+
+
+**Reference Issue:** [Issue #11](https://github.com/KDwevedi/c4gt-docs/issues/10)  
+**Reference Issue API Response:** [Issue #11 API Response](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/10)
+**Refernce PR:** [PR #17](https://github.com/KDwevedi/c4gt-docs/pull/17)
+
+This link doesn't show up in the UI for either issue or PR. But (surprisingly) [issue timeline](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/10/timeline) contains a 'cross-referenced' event.
+
+
 
 
   
