@@ -464,8 +464,8 @@ We can simply [mention issues](https://docs.github.com/en/issues/tracking-your-w
 
 
 **Reference Issue:** [Issue #11](https://github.com/KDwevedi/c4gt-docs/issues/10)  
-**Reference Issue API Response:** [Issue #11 API Response](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/10)
-**Refernce PR:** [PR #17](https://github.com/KDwevedi/c4gt-docs/pull/17)
+**Reference Issue API Response:** [Issue #11 API Response](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/10)  
+**Reference PR:** [PR #17](https://github.com/KDwevedi/c4gt-docs/pull/17)
 
 This link doesn't show up in the UI for either issue or PR. But (surprisingly) [issue timeline](https://api.github.com/repos/KDwevedi/c4gt-docs/issues/10/timeline) contains a 'cross-referenced' event.
 
